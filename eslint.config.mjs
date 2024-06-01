@@ -3,6 +3,12 @@ import pluginJs from "@eslint/js";
 
 
 export default [
+    {
+        ignores: [
+            "node_modules/**",
+            "dist/**"
+        ]
+    },
     // Configuration for all JavaScript files
     {
         files: ["**/*.js"],
