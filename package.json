@@ -6,9 +6,11 @@
   "scripts": {
     "start": "electron .",
     "watch": "nodemon --exec electron .",
-    "reset": "git reset --hard"
+    "reset": "git reset --hard",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
-  "repository": "https://github.com/stackacademytv/master-electron",
+  "repository": "https://github.com/swoldetsadick/master-electron",
   "keywords": [
     "Electron",
     "Master Electron",
@@ -17,7 +19,11 @@
   "author": "GitHub, Stackacademytv",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@eslint/js": "^9.4.0",
     "electron": "^30.0.9",
+    "eslint": "^9.4.0",
+    "globals": "^15.3.0",
+    "jslint": "^0.12.1",
     "nodemon": "^3.1.2"
   }
 }
